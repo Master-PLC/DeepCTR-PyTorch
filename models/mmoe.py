@@ -15,7 +15,7 @@ from deepctr_torch.inputs import combined_dnn_input
 from deepctr_torch.layers import DNN
 from deepctr_torch.layers.core import PredictionLayer
 
-from mtlbasemodel import MTLBaseModel
+from .mtlbasemodel import MTLBaseModel
 
 
 class MMOE(MTLBaseModel):

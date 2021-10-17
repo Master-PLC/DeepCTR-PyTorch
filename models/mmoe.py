@@ -8,12 +8,12 @@
 @Version      :1.0
 '''
 
-from deepctr_torch.layers.core import PredictionLayer
 import numpy
 import torch
 import torch.nn as nn
 from deepctr_torch.inputs import combined_dnn_input
 from deepctr_torch.layers import DNN
+from deepctr_torch.layers.core import PredictionLayer
 
 from ..base.mtlbasemodel import MTLBaseModel
 

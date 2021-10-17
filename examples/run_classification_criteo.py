@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import torch
+from deepctr_torch.inputs import DenseFeat, SparseFeat, get_feature_names
+from deepctr_torch.models import *
 from sklearn.metrics import log_loss, roc_auc_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-
-from deepctr_torch.inputs import SparseFeat, DenseFeat, get_feature_names
-from deepctr_torch.models import *
 
 if __name__ == "__main__":
     # The Criteo Display Ads dataset 是kaggle上的一个CTR预估竞赛数据集。里面包含13个数值特征I1-I13和26个类别特征C1-C26

@@ -1,8 +1,18 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@File         :run_mtl.py
+@Description  :
+@Date         :2021/10/15 21:22:54
+@Author       :Arctic Little Pig
+@Version      :1.0
+'''
+
 import pandas as pd
+from deepctr_torch.inputs import DenseFeat, SparseFeat, get_feature_names
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-from deepctr_torch.inputs import SparseFeat, DenseFeat, get_feature_names
 
 from ..models.mmoe import MMOE
 
